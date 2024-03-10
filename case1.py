@@ -101,7 +101,7 @@ if __name__ == "__main__":
 
                   if floor1.consolePrint: print('                 Time: ' + str(floor1.simTime) + '  Event: ' + str(floor1.event) + '  ', end='')
 
-                  if floor1.event == 1: floor1.Event_1(minPeopleCome=1,maxPeopleCome=15)
+                  if floor1.event == 1: floor1.Event_1(minPeopleCome=1,maxPeopleCome=10)
                   if floor1.event == 2: floor1.Event_2(capacity=capacity)
 
                   data.loc[len(data)] = [capacity, floor1.simTime, floor1.persons]
